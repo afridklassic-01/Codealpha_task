@@ -36,3 +36,23 @@ To run any of the interactive web dashboards locally on your machine, follow the
 ```bash
 git clone [https://github.com/afridklassic-01/Codealpha_task.git](https://github.com/afridklassic-01/Codealpha_task.git)
 cd Codealpha_task
+
+### Step 2: Install Required Open-Source Frameworks
+Make sure your Python environment has the core data science libraries loaded so the scripts can run without errors:
+```bash
+pip install pandas numpy scikit-learn tensorflow streamlit cv2 streamlit-drawable-canvas
+
+# To run the Credit Scoring Underwriting Dashboard:
+cd credit_scoring_project
+streamlit run app.py
+
+# To run the Handwritten Character Recognition Dashboard:
+cd ../handwritten_prediction
+streamlit run app.py
+
+# To run the Clinical Disease Predictor Dashboard:
+cd ../Disease_prediction
+streamlit run app.py
+
+
+Note: Large dataset files (.csv, .xlsx) and heavy serialized neural network weights (.h5, .pkl) are excluded from this remote tracking repository via .gitignore configurations to maintain an optimized, production-clean repository size layout.
