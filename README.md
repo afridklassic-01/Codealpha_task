@@ -31,20 +31,22 @@ A diagnostic triage assistant designed to map variable systemic symptoms to loca
 ## ⚙️ Local Deployment & Environment Setup
 
 To run any of the interactive web dashboards locally on your machine, follow these standard installation routines:
-Step 1: Clone the Code Base
+
+### Step 1: Clone the Code Base
 ```bash
 git clone [https://github.com/afridklassic-01/Codealpha_task.git](https://github.com/afridklassic-01/Codealpha_task.git)
 cd Codealpha_task 
 ```
 ### Step 2: Install Required Open-Source Frameworks
-``` 
+
 Make sure your Python environment has the core data science libraries loaded:
+```
 pip install pandas numpy scikit-learn tensorflow streamlit cv2 streamlit-drawable-canvas
 
 ```
-Step 3: Run an Application Dashboard
-```
+### Step 3: Run an Application Dashboard
 Navigate into the specific project folder you want to view, ensure your local model files are trained, and initiate the Streamlit server:
+```
 # To run the Credit Scoring Underwriting Dashboard:
 cd credit_scoring_project
 streamlit run app.py
@@ -58,6 +60,6 @@ cd ../Disease_prediction
 streamlit run app.py
 
 ```
-NOTE 
+### NOTE 
 ```
 Note: Large dataset files (.csv, .xlsx) and heavy serialized neural network weights (.h5, .pkl) are excluded from this remote tracking repository via .gitignore configurations to maintain an optimized, production-clean repository size layout.
