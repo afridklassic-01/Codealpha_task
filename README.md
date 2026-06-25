@@ -60,6 +60,5 @@ cd ../Disease_prediction
 streamlit run app.py
 
 ```
-### NOTE 
-```
-Note: Large dataset files (.csv, .xlsx) and heavy serialized neural network weights (.h5, .pkl) are excluded from this remote tracking repository via .gitignore configurations to maintain an optimized, production-clean repository size layout.
+### NOTE: 
+Large dataset files (.csv, .xlsx) and heavy serialized neural network weights (.h5, .pkl) are excluded from this remote tracking repository via .gitignore configurations to maintain an optimized, production-clean repository size layout.
